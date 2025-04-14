@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: black;
+            margin: 0;
+        }
+
+        .header {
+            background-color: red;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        form {
+            margin: 30px auto;
+            width: 60%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: white;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            width: 100px;
+            height: 70px;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid black;
+            font-size: 11px;
+            padding: 10px;
+        }
+
+        td strong {
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .button-container a {
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            text-decoration: underline;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Pendaftaran</h1>
+    </div>
+
+    <form>
+        <table>
+            <tr>
+                <td><strong>Nama Lengkap</strong></td>
+                <td colspan="3"><input type="text" placeholder="Masukkan Nama"></td>
+            </tr>
+            <tr>
+                <td><strong>Alamat</strong></td>
+                <td><input type="text" placeholder="Desa / Kelurahan"></td>
+                <td><input type="text" placeholder="Kota / Kabupaten"></td>
+                <td><input type="text" placeholder="Provinsi"></td>
+            </tr>
+            <tr>
+                <td><strong>Tanggal Lahir</strong></td>
+                <td colspan="3"><input type="date" value="2025-04-14"></td>
+            </tr>
+            <tr>
+                <td><strong>Jurusan Pilihan</strong></td>
+                <td><input type="radio" name="jurusan"> IPA</td>
+                <td><input type="radio" name="jurusan"> IPS</td>
+                <td><input type="radio" name="jurusan"> Bahasa</td>
+            </tr>
+            <tr>
+                <td colspan="4"><input type="checkbox"> Saya Menyetujui Semua Persyaratan</td>
+            </tr>
+        </table>
+
+        <div class="button-container">
+            <a href="index.html">Home</a>
+            <a href="list_pendaftar.html">List Pendaftar</a>
+        </div>
+    </form>
+
+</body>
+</html>
